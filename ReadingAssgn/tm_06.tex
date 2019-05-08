@@ -1,0 +1,18 @@
+\begin{frame}{Generalized Weighted VCG Mechanism}
+\begin{block}{Proof(4)}
+$$p_{i,a^{*}}-t_{i,a^{*}}(u_{-i}) - (p_{i,a}-t_{i,a}(u_{-i}))$$
+$$ = p_{i,a^{*}} - \frac{1}{k_{i}}\begin{pmatrix}
+\sum _{j \neq i}k_{j}p_{j,a_{-i}^{*}} + C_{a_{-i}^{*}} - \sum _{j \neq i}k_{j}p_{j,a^{*}} - C_{a^{*}}
+\end{pmatrix} - p_{i,a}$$
+
+$$+ \frac{1}{k_{i}}\begin{pmatrix}
+\sum _{j \neq i}k_{j}p_{j,a_{-i}^{*}} + C_{a_{-i}^{*}} - \sum _{j \neq i}k_{j}p_{j,a} - C_{a}
+\end{pmatrix}$$
+
+$$= \frac{1}{k_{i}}\begin{pmatrix}
+\sum _{j \in N}k_{j}p_{j,a^{*}} + C_{a^{*}} - \sum _{j \in N}k_{j}p_{j,a} - C_{a} \geq 0
+\end{pmatrix}$$
+
+Thus $a^{*}$ indeed maximizes $p_{i,a} - t_{i,a}(u_{-i})$ Note that when $\Upsilon \subseteq \Upsilon _{QL}$, we have $p_{i,a} = v_{i,a} - v_{i,a_{i}}$ for all $a \in A, i \in N$, and maximizing an affine function of the willingness to pay is equivalent to maximizing the same affine function of the values. Thus, this mechanism coincides with the weighted VCG mechanisms when utilities are quasi-linear.
+\end{block}
+\end{frame}

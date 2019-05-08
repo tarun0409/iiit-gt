@@ -1,0 +1,25 @@
+\begin{frame}{Generalized Weighted VCG Mechanism}
+\begin{block}{Definition}
+\begin{itemize}
+    \item Parameters
+    \begin{itemize}
+        \item Non-negative weights $\{k_{i}\}_{i \in N}$
+        \item Constants $\{C_{a}\}_{a \in A}$
+    \end{itemize}
+    \item Type Profile: $\hat{u} = (\hat{u}_{1},\hat{u}_{2},...,\hat{u}_{n})$
+    \item Willingness to pay: $\hat{p}_{i,a} = \hat{u}_{i,a}^{-1}(min_{a^{'}\in A}\hat{v}_{i,a^{'}})$
+    \item Choice Rule: $x(\hat{u})=a^{*}$ and
+    $a^{*} \in arg\, max_{a \in A}\, \begin{Bmatrix}
+\sum _{i \in N}k_{i}\hat{p}_{i,a}+C_{a}
+\end{Bmatrix}$
+breaking ties arbitrarily, independent to agents' report.
+\item Payment Rule: $t_{i}(\hat{u}) = 0 \; ; \; i \in N\: s.t\: k_{i}=0 $
+$$t_{i}(\hat{u}) = \frac{1}{k_{i}}\begin{pmatrix}
+\sum _{j \neq i}k_{j}\hat{p}_{j,a_{-i}^{*}} + C_{a_{-i}^{*}} - \sum _{j \neq i}k_{j}\hat{p}_{j,a^{*}} - C_{a^{*}}
+\end{pmatrix} \; \forall i\; s.t \; k \neq 0$$
+where $a_{-i}^{*} \in arg\: max_{a\in A}\begin{Bmatrix}
+\sum _{j \neq i}k_{j}\hat{p}_{j,a} + C_{a}
+\end{Bmatrix}$
+\end{itemize}
+\end{block}
+\end{frame}
